@@ -9,7 +9,7 @@ mkdir /home/ec2-user/services
 cd /home/ec2-user/services
 sudo cat > web.json <<- "EOF"
 {
-    "services":  {
+    "service":  {
         "name": "apache web server",
         "port": 80,
         "tags": ["apache", "demonstration"],
