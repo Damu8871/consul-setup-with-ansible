@@ -1,0 +1,8 @@
+---
+ - hosts: web-servers
+   tasks:
+     - script: /home/ec2-user/shell/init-run-consul-client.sh
+       register: myoutput
+     - name: Output console
+       debug:
+         msg: "{{myoutput}}"
